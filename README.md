@@ -5,7 +5,6 @@ This repo contains the dotfiles as well as wallpapers and scripts to set things 
 ## 1. Install
 ```
 git clone git@github.com:HiddenKendo/dotfiles.git
-
 ```
 
 
