@@ -1,0 +1,19 @@
+#		PACMAN:
+eza
+tldr
+neovim
+copyq
+waybar
+swww
+yay
+git
+btop
+fastfetch
+swaync
+rofi
+stow
+
+#		AUR:
+#localsend-bin
+#rar
+#librewolf-bin
