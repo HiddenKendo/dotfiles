@@ -1,0 +1,2 @@
+.config/copyq/*
+!.config/copyq/copyq.conf
