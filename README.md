@@ -4,20 +4,20 @@
 
 ### Install useful utilities + dependencies
 ```
-sudo pacman -S --noconfirm --needed eza copyq nvim man-db man-pages tealdeer brightnessctl git base-devel zsh stow
-echo "alias ls='eza -l'"
+sudo pacman -S --noconfirm --needed eza copyq nvim btop man-db man-pages tealdeer brightnessctl git base-devel zsh stow
+echo "alias ls='eza -l'" >> ~/.bashrc
 ```
 
 ### Setup Git
 
 1. Set username and email - [🔗](https://docs.github.com/en/get-started/git-basics/set-up-git#setting-up-git) -
 ```
-git config --global user.name "Mona Lisa"
-git config --global user.email "YOUR_EMAIL"
+git config --global user.name "<username>"
+git config --global user.email "<email>"
 ```
 2. Create ssh key for authentication - [🔗](https://docs.github.com/en/get-started/git-basics/set-up-git#connecting-over-ssh) -
 ```
-ssh-keygen -t ed25519 -C "your_email@example.com"
+ssh-keygen -t ed25519 -C "<email>"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
