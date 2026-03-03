@@ -1,0 +1,16 @@
+#		PACMAN:
+eza
+tldr
+neovim
+stow
+copyq
+waybar
+awww-bin
+btop
+fastfetch
+swaync
+rofi
+ttf-adwaitamono-nerd
+
+#		AUR:
+#rar
