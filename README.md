@@ -45,6 +45,9 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-
 ```
 
 ## Install things
+### Clone the repo + symbolic link it
 ```
 git clone git@github.com:HiddenKendo/dotfiles.git
+cd dotfiles
+stow . --adopt
 ```
