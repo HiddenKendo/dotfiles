@@ -5,7 +5,7 @@ neovim
 stow
 copyq
 waybar
-awww-bin
+awww
 btop
 fastfetch
 swaync

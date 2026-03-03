@@ -1,28 +1,50 @@
-# Pre-install Things
+# Instructions
 
-## Setup Git
+## Pre-install things
 
+### Install useful utilities + dependencies
 ```
-sudo pacman -S git
+sudo pacman -S --noconfirm --needed eza copyq nvim man-db man-pages tealdeer brightnessctl git base-devel zsh stow
+echo "alias ls='eza -l'"
 ```
 
-1. Set username and email [(🔗)](https://docs.github.com/en/get-started/git-basics/set-up-git#setting-up-git)
+### Setup Git
+
+1. Set username and email - [🔗](https://docs.github.com/en/get-started/git-basics/set-up-git#setting-up-git) -
 ```
-# git config --global user.name "Mona Lisa"
-# git config --global user.email "YOUR_EMAIL"
+git config --global user.name "Mona Lisa"
+git config --global user.email "YOUR_EMAIL"
 ```
-2. Create ssh key for authentication [(🔗)](https://docs.github.com/en/get-started/git-basics/set-up-git#connecting-over-ssh)
+2. Create ssh key for authentication - [🔗](https://docs.github.com/en/get-started/git-basics/set-up-git#connecting-over-ssh) -
 ```
-# ssh-keygen -t ed25519 -C "your_email@example.com"
-# eval "$(ssh-agent -s)"
-# ssh-add ~/.ssh/id_ed25519
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
 ```
-3. Add ssh key to account (copy key using command below) [(🔗)](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account)
+3. Add ssh key to account (copy key using command below) - [🔗](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account#adding-a-new-ssh-key-to-your-account) -
 ```
-# cat ~/.ssh/id_ed25519.pub | copyq copy -
+cat ~/.ssh/id_ed25519.pub | copyq copy -
 ```
 
 4. Test if ssh key works
 ```
-# ssh -T git@github.com
+ssh -T git@github.com
+```
+
+### Install yay - [🔗](https://github.com/Jguer/yay) -
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+
+### Setup zsh + zsh theme
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k"
+```
+
+## Install things
+```
+git clone git@github.com:HiddenKendo/dotfiles.git
 ```

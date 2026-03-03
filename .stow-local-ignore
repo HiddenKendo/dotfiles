@@ -1,4 +1,5 @@
 .git
-scripts
+.gitignore
 keyd
 README.md
+scripts
