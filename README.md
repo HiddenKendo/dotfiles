@@ -1,3 +1,8 @@
+# TODO
+
+☐ keyd setup
+☐ aconfmgr setup from fresh manual install
+
 # Instructions
 
 ## Pre-install things
