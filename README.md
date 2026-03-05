@@ -11,7 +11,7 @@
 
 ### Install useful utilities + dependencies
 ```
-sudo pacman -S --noconfirm --needed eza copyq nvim btop man-db man-pages tealdeer brightnessctl git base-devel zsh stow
+sudo pacman -S --noconfirm --needed eza copyq nvim btop man-db man-pages tealdeer brightnessctl git base-devel zsh stow keyd
 echo "alias ls='eza -l'" >> ~/.bashrc
 ```
 
