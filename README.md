@@ -2,6 +2,8 @@
 
 ☐ keyd setup
 ☐ aconfmgr setup from fresh manual install
+☐ services enabling and starting but thatll probably be handled in aconfmgr
+☐ zshrc and hyprland is sometimes broken or something
 
 # Instructions
 
