@@ -1,4 +1,7 @@
 .config/copyq/*
 !.config/copyq/copyq.conf
+
 wallpaper/images/*
+!wallpaper/images/.gitkeep
+# .gitkeep to keep the images dir empty as a placeholder
 wallpaper/current_index_file
