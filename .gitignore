@@ -1,2 +1,4 @@
 .config/copyq/*
 !.config/copyq/copyq.conf
+wallpaper/images/*
+wallpaper/current_index_file
